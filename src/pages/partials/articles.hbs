@@ -1,0 +1,26 @@
+<div class="latest-from-aeg">
+  <h2 class="heading">
+    All the latest from AEG
+  </h2>
+
+  <div class="articles">
+    {{#each articles}}
+      <div class="article">
+        <picture class="article-image">
+          <source media="(min-width:384px)" srcset="{{ imgSrc }}">
+          <img src="{{ imgSrcMobile }}" alt="{{ imgAlt }}">
+        </picture>
+
+        <div class="article-details">
+          <h3>{{ title }}</h3>
+
+          <p>
+            {{ shortText }}
+          </p>
+
+          <a href="">Read More</a>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>
